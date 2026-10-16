@@ -1,5 +1,24 @@
 # The Walyas Project 
 
+## init 
+mkdir walyas-api
+cd walyas-api
+go version
+go mod init github.com/YOUR_USERNAME/walyas-api
+
+go mod tidy synchronizes dependencies in go.mod and go.sum as needed
+go mod edit -module github.com/YOUR_USERNAME/walyas-api
+go mod tidy
+
+go get ://github.com -- add dependency
+## run project 
+go run ./cmd/api
+
+## test project
+go test ./internal/portfolio/portfolio_test.go
+Update your Go module
+
+
 # walyas-api initial structure
 
 walyas-api/

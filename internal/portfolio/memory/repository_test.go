@@ -6,11 +6,12 @@ import (
 	"testing"
 
 	"github.com/jermisha/walyas-api/internal/portfolio"
+	"github.com/jermisha/walyas-api/internal/portfolio/memory"
 )
 
 func TestPortfolioOwnership(t *testing.T) {
 	ctx := context.Background()
-	repo := New()
+	repo := memory.New()
 
 	_, err := portfolio.New(
 		"P200",

@@ -12,6 +12,9 @@ type Repository struct {
 	portfolios map[string]*portfolio.Portfolio
 }
 
+// Compile-time interface assertion.
+var _ portfolio.Repository = (*Repository)(nil)
+
 func New() *Repository {
 	return &Repository{
 		portfolios: make(map[string]*portfolio.Portfolio),
@@ -49,5 +52,3 @@ func (r *Repository) GetByIDForUser(
 
 	return p, nil
 }
-
-var _ portfolio.Repository = (*Repository)(nil)

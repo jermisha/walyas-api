@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/jermisha/walyas/internal/portfolio"
+	"github.com/jermisha/walyas-api/internal/portfolio"
 )
 
 func TestPortfolioOwnership(t *testing.T) {

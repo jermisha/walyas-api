@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/jermisha/walyas/internal/portfolio"
+	"github.com/jermisha/walyas-api/internal/portfolio"
 )
 
 type Repository struct {
